@@ -4,18 +4,23 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   width: 100%;
 }
 
 #nav-bar a {
   background-color: rgba(116, 44, 16,0.9);
   border: none;
-  padding: 0.5em;
+  padding: 0.6em;
   font-size: 1.2em;
   text-align: center;
   color: floralwhite;
   text-decoration: none;
+  transition: 0.2s;
+}
+
+#nav-bar a:hover {
+  background-color: rgba(100, 44, 16,1);
+  transition: 0.2s;
 }
 
 /************************ main ************************/
@@ -50,6 +55,9 @@ h1 {
 #about {
   height: 95vh;
   margin-top: 124px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .img-container img {
@@ -74,7 +82,7 @@ h1 {
 
 .icon-list {
   padding: 0.5em;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   border-radius: 0.5em;
   margin: 0.75em;
   display: inline-block;
@@ -92,6 +100,9 @@ h1 {
   max-width: 200px;
 }
 
+hr {
+  width: 25%;
+}
 
 /************************ contact ************************/
 
@@ -104,11 +115,12 @@ h1 {
 @media only screen and (min-width: 450px) {
   #nav-bar {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   #nav-bar a {
     border-radius: 0.3em;
-    padding: .5em 1.75em;
+    padding: .75em 2em;
     font-size: 1.2em;
   }
 
