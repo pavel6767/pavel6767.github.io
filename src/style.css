@@ -25,10 +25,6 @@
 
 /************************ main ************************/
 
-.in-transition {
-  transition: transform 900ms ease;
-}
-
 #main {
   display: flex;
   flex-direction: column;
@@ -70,6 +66,22 @@ h1 {
   width: 60%;
   border-radius: 20%;
 }
+
+#intro-text > h3 {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* #stage a:nth-of-type(1) {
+  animation-name: fader;
+  animation-delay: 4s;
+  animation-duration: 1s;
+}
+
+@keyframes fader {
+  from { opacity: 1.0; }
+  to   { opacity: 0.0; }
+} */
 
 /************************ works ************************/
 
