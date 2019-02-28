@@ -1,15 +1,15 @@
 /************************ nav bar ************************/
 
 #nav-bar {
-  position: fixed;
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 0 auto;
+  position: fixed;
 }
 
 #nav-bar a {
   background-color: rgba(116, 44, 16,0.9);
-  border: none;
   padding: 0.6em;
   font-size: 1.2em;
   text-align: center;
@@ -31,6 +31,8 @@
   text-align: center;
   /* background-color: rgba(199, 123, 93,0.55); */
   padding: 0.5em;
+  margin: 0 auto;
+  width:80%;
 }
 
 #about {
@@ -74,7 +76,7 @@ h1 {
 
 .img-container iframe {
   border: none;
-  width: 80%;
+  width: 250px;
   height: auto;
   padding: 0.5em;
 
@@ -114,8 +116,9 @@ hr {
 
 @media only screen and (min-width: 450px) {
   #nav-bar {
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: block;
+    text-align: center;
+    margin-top: 1em;
   }
 
   #nav-bar a {
@@ -132,10 +135,10 @@ hr {
     max-width: 250px;
   }
 
-  .img-container iframe {
+  /* .img-container iframe {
     width: 354px;
     height: 200px;
-  }
+  } */
 }
 
 /************************ V 768 ************************/
