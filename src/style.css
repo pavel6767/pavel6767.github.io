@@ -25,6 +25,10 @@
 
 /************************ main ************************/
 
+.in-transition {
+  transition: transform 900ms ease;
+}
+
 #main {
   display: flex;
   flex-direction: column;
