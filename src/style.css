@@ -1,3 +1,8 @@
+
+body {
+  background-color: #395869;
+}
+
 /************************ nav bar ************************/
 
 #nav-bar {
@@ -9,7 +14,7 @@
 }
 
 #nav-bar a {
-  background-color: rgba(116, 44, 16,0.9);
+  background-color: rgba(57, 88, 105,0.8);
   padding: 0.6em;
   font-size: 1.2em;
   text-align: center;
@@ -19,7 +24,7 @@
 }
 
 #nav-bar a:hover {
-  background-color: rgba(100, 44, 16,1);
+  background-color: rgba(57, 88, 105,1);
   transition: 0.2s;
 }
 
@@ -29,21 +34,21 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* background-color: rgba(199, 123, 93,0.55); */
   padding: 0.5em;
   margin: 0 auto;
   width:80%;
+  color: #97b4c3;
 }
 
-#about {
-  background-image: linear-gradient(white, rgba(89, 164, 77, 0.3));
+/* #about {
+  background-image: linear-gradient(#395869, #395869);
 }
 #main > :last-child {
-  background-image: linear-gradient(rgba(89, 164, 77, 0.3), white);
-}
+  background-image: linear-gradient(#395869,#395869);
+} */
 
 .block {
-  background-color: rgba(89, 164, 77, 0.3);
+  background-color: #395869;
   margin: 0.5em;
   padding: 0.5em;
 }
@@ -72,16 +77,6 @@ h1 {
   transition: opacity 1s;
 }
 
-/* #stage a:nth-of-type(1) {
-  animation-name: fader;
-  animation-delay: 4s;
-  animation-duration: 1s;
-}
-
-@keyframes fader {
-  from { opacity: 1.0; }
-  to   { opacity: 0.0; }
-} */
 
 /************************ works ************************/
 
@@ -139,7 +134,7 @@ hr {
 
   #nav-bar a {
     border-radius: 0.3em;
-    padding: .75em 0.75em;
+    padding: 0.5em 0.75em;
     font-size: 1.2em;
     margin: 1em;
   }
@@ -177,4 +172,3 @@ hr {
   }
 
 }
-/************************ footer? ************************/
