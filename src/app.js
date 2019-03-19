@@ -11,21 +11,37 @@ $("#nav-bar a").click(function () {
 
 // cross fade info text
 
-let intro = document.getElementById('intro-text');
-let textSlides = intro.getElementsByTagName('h3');
+function introFade() {
+  const content = [
+    "I love learning and implementing tools to assemble solutions",
+    "I'm a Full Stack Developer specializing in NERDS stack"
+  ]
 
-let current = 0;
+  let text = document.querySelector('#intro-text > h3');
+  let current = 0;
 
-setInterval(function () {
-  for (let i = 0; i < textSlides.length; i++) {
-    textSlides[i].style.opacity = 1;
-  }
+  setInterval(function () {
+    text.textContent = content[current];
 
-  if (textSlides.length % current === 0) {
-    current = 0;
-  } else {
-    current++;
-  }
-  textSlides[current].style.opacity = 1;
+    if (current > 0) {
+      current = 0;
+    } else {
+      current++;
+    }
+  }, 3000);
+}
+introFade()
 
-}, 2000);
+// setInterval(function () {
+//   for (let i = 0; i < con.length; i++) {
+//     textSlides[i].style.opacity = 1;
+//   }
+
+//   if (textSlides.length % current === 0) {
+//     current = 0;
+//   } else {
+//     current++;
+//   }
+//   textSlides[current].style.opacity = 1;
+
+// }, 2000);
