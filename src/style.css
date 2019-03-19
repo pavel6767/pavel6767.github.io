@@ -75,13 +75,17 @@ h1 {
   border-radius: 20%;
 }
 
+#intro-text {
+  color: #e2e2e2;
+}
+
 #intro-text > h3 {
   opacity: 0;
   transition: opacity 1s;
 }
 
 
-/************************ works ************************/
+/************************ projects ************************/
 
 .img-container {
   height: auto;
