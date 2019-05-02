@@ -64,10 +64,6 @@ a, #main {
   padding: 0.5em;
 }
 
-h1 {
-  text-transform: uppercase;
-}
-
 /************************ about ************************/
 
 #about {
@@ -106,7 +102,11 @@ p {
   margin: 0.5em auto;
 }
 
-h1, p {
+#projects > h1 {
+  text-transform: uppercase;
+}
+
+#projects > h1, p {
   color: black;
 }
 
