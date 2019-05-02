@@ -84,12 +84,44 @@ h1 {
 }
 
 #intro-text > h3 {
-  /* opacity: 0; */
   transition: opacity 1s;
 }
 
 
 /************************ projects ************************/
+
+span {
+  padding: 3px 5px;
+  line-height: 25px;
+  border-radius: 5px;
+  color: white;
+}
+
+/***************************** Icon backgrounds */
+
+.black {
+  background-color: black;
+}
+
+.db {
+  background-color: #13aa52;
+}
+
+.electron {
+  background-color: #097e95;
+}
+
+.dark-blue {
+  background-color: #3659a2;
+}
+
+.purple {
+  background-color: #4a4290;
+}
+
+.heroku {
+  background-color: #430098;
+}
 
 .img-container {
   height: auto;
