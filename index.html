@@ -1,122 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+	<head>
+		<title>Pavel Machuca | Developer</title>
+		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="src/style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"
+		></script>
+		<script defer src="src/app.js"></script>
+	</head>
 
-<head>
-  <title>Pavel Machuca | Developer</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="src/style.css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script defer src="src/app.js"></script>
-</head>
+	<body>
+		<div id="nav-bar">
+			<a href="#about">Top</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+		</div>
 
-<body>
-  <div id="nav-bar">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <div id="main">
-    <div id="about" class="block">
-      <div id="intro-text" class="text">
-        <h2>Pavel Machuca | Developer</h2>
-        <!-- <p>
-          Front-end:
-          <ul>
-            <li>React/Redux</li>
-            <li>CSS</li>
-            <li>Liquid</li>
-          </ul>
-        </p>
-        <p>
-          Back-end:
-          <ul>
-            <li>Node</li>
-            <li>Express</li>
-            <li>PostgreSQL</li>
-            <li>GraphQL</li>
-          </ul>
-        </p> -->
-      </div>
-    </div>
+		<div id="main">
+			<div id="about" class="block">
+				<div id="intro-text" class="text">
+					<h2>Pavel Machuca | Developer</h2>
+				</div>
+			</div>
 
+			<div id="projects" class="block">
+				<h1>Projects</h1>
 
-    <div id="projects" class="block">
-      <h1>Projects</h1>
+				<div>
+					<h2>
+						<a href="http://www.energy-healing-online.com/" target="blank"
+							>Energy Healing Online</a
+						>
+					</h2>
 
-      <h2><a href="http://www.energy-healing-online.com/" target="blank">Energy Healing Online</a></h2>
-      
-      <div class="text">
-        <p>Application that guides users through emotional and psychological healing.</p>
-      </div>
-      <div class="icon-list">
-        <span class='black'>WordPress</span>
-        <span class='express'>PHP</span>
-        <span class='purple'>Javascript</span>
-        <span class='purple'>CSS</span>
-      </div>
+					<div class="text">
+						<p>
+							Application that guides users through emotional and psychological
+							healing.
+						</p>
+					</div>
+					<div class="icon-list">
+						<span class="black">WordPress</span>
+						<span class="db">Google Graphs</span>
+						<span class="black">PHP</span>
+						<span class="purple">Javascript</span>
+						<span class="purple">CSS</span>
+					</div>
+				</div>
 
-      <hr>
-      <h2><a href="https://nerds-demo.herokuapp.com/" target="blank">Fullstack Demo App</a></h2>
-      <div class="text">
-        <div><a href="https://github.com/pavel6767/fullstack-demo-campus-students" target="blank">GITHUB</a></div>
-        <p>A Fullstack demo application, can create students, that can belong to campuses.</p>
-      </div>
-      <div class="icon-list">
-        <span class='dark-blue'>Node</span>
-        <span class='express'>Express</span>
-        <span class='db'>Sequelize</span>
-        <span class='purple'>React</span>
-        <span class='purple'>Redux</span>
-        <span class='heroku'>Heroku</span>
-      </div>
+				<hr />
 
-      <hr>
+				<div>
+					<h2>
+						<a href="https://nerds-demo.herokuapp.com/" target="blank"
+							>Fullstack Demo App</a
+						>
+					</h2>
+					<div class="text">
+						<div>
+							<a
+								href="https://github.com/pavel6767/fullstack-demo-campus-students"
+								target="blank"
+								>GitHub</a
+							>
+						</div>
+						<p>
+							A Fullstack demo application, can create students, that can belong
+							to campuses.
+						</p>
+					</div>
+					<div class="icon-list">
+						<span class="dark-blue">Node</span>
+						<span class="dark-blue">Express</span>
+						<span class="db">Sequelize</span>
+						<span class="purple">React</span>
+						<span class="purple">Redux</span>
+						<span class="heroku">Heroku</span>
+					</div>
+				</div>
 
-      <h2>Save for Later</h2>
-      <div class="text">
-        <div><a href="https://www.youtube.com/watch?v=fmU0xobQLxc" target="blank">Demo Video</a></div>
-        <div><a href="https://github.com/the-keyboard-shredders" target="blank">GitHub</a></div>
-        <p>An application that allows users to save articles through a google chrome extension and access them on a
-          mobile application</p>
-      </div>
-      <div class="icon-list">
-          <span class='dark-blue'>Node</span>
-          <span class='db'>mongoDB</span>
-          <span class='db'>graphQL</span>
-          <span class='purple'>React-native</span>
-      </div>
+				<hr />
 
-      <hr>
-      
-      <h2><a href="http://stackathon1810.herokuapp.com/" target="blank">Tetris clone</a></h2>
-      <div class="text">
-          <div><a href="https://www.youtube.com/watch?v=hohA2UQJFnY" target="blank">Demo Video</a></div>
-        <div><a href="https://github.com/catmaze/stackathon1810">GITHUB</a></div>
-        <p>Tetris clone using vanilla JS. Deployed on heroku and Electron as a desktop app</p>
-      </div>
-      <div class="icon-list">
-          <span class='purple'>Vanilla JS</span>
-          <span class='electron'>Electron</span>
-          <span class='heroku'>Heroku</span>
-      </div>
-    </div>
+				<div>
+					<h2>Save for Later</h2>
+					<div class="text">
+						<div>
+							<a
+								href="https://www.youtube.com/watch?v=fmU0xobQLxc"
+								target="blank"
+								>Demo Video</a
+							>
+						</div>
+						<div>
+							<a href="https://github.com/the-keyboard-shredders" target="blank"
+								>GitHub</a
+							>
+						</div>
+						<p>
+							An application that allows users to save articles through a google
+							chrome extension and access them on a mobile application
+						</p>
+					</div>
+					<div class="icon-list">
+						<span class="dark-blue">Node</span>
+						<span class="db">mongoDB</span>
+						<span class="db">graphQL</span>
+						<span class="purple">React-native</span>
+					</div>
+				</div>
 
+				<hr />
 
+				<div>
+					<h2>
+						<a href="http://stackathon1810.herokuapp.com/" target="blank"
+							>Tetris clone</a
+						>
+					</h2>
+					<div class="text">
+						<div>
+							<a
+								href="https://www.youtube.com/watch?v=hohA2UQJFnY"
+								target="blank"
+								>Demo Video</a
+							>
+						</div>
+						<div>
+							<a href="https://github.com/catmaze/stackathon1810">GitHub</a>
+						</div>
+						<p>
+							Tetris clone using vanilla JS. Deployed on heroku and Electron as
+							a desktop app
+						</p>
+					</div>
+					<div class="icon-list">
+						<span class="purple">Vanilla JS</span>
+						<span class="electron">Electron</span>
+						<span class="heroku">Heroku</span>
+					</div>
+				</div>
+			</div>
 
-    <div id="contact" class="block">
-      <div class="icon-list contact-icon-list">
-        <a href='mailto: pavelmachuca12@gmail.com'>
-          <img src='https://goo.gl/DwpFBY' alt="email me" /></a>
-        <a href='https://github.com/pavel6767'>
-          <img src='https://goo.gl/EPdLo9' alt="gitHub" /></a>
-        <a href='https://www.linkedin.com/in/pavel-machuca/'>
-          <img src='https://goo.gl/yjRhkP' alt="LinkedIn" /></a>
-        <a href='https://codepen.io/pavel6767/'>
-          <img src='https://goo.gl/ZUJVJj' alt="codepen" /></a>
-      </div>
-    </div>
-  </div>
-</body>
-
+			<div id="contact" class="block">
+				<div class="icon-list contact-icon-list">
+					<a href="mailto: pavelmachuca12@gmail.com">
+						<img src="https://goo.gl/DwpFBY" alt="email me"
+					/></a>
+					<a href="https://github.com/pavel6767">
+						<img src="https://goo.gl/EPdLo9" alt="gitHub"
+					/></a>
+					<a href="https://www.linkedin.com/in/pavel-machuca/">
+						<img src="https://goo.gl/yjRhkP" alt="LinkedIn"
+					/></a>
+					<a href="https://codepen.io/pavel6767/">
+						<img src="https://goo.gl/ZUJVJj" alt="codepen"
+					/></a>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

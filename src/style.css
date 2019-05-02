@@ -14,7 +14,7 @@ body {
 }
 
 #nav-bar a {
-  background-color: rgba(57, 88, 105,0.8);
+  background-color: rgba(57, 88, 105,0.95);
   padding: 0.6em;
   font-size: 1.2em;
   text-align: center;
@@ -41,6 +41,10 @@ body {
 
 #projects > h2 {
   text-decoration: underline;
+}
+
+#projects > div {
+  margin: 2em auto;
 }
 
 a, #main {
@@ -98,6 +102,14 @@ span {
   font-size: 0.85em;
 }
 
+p {
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 0.2em;
+}
+
 /***************************** Icon backgrounds */
 
 .black {
@@ -138,23 +150,14 @@ span {
 }
 
 .icon-list {
-  padding: 0.5em;
-  /* background-color: chartreuse; */
   border-radius: 0.5em;
-  margin: 0.75em;
+  margin: 0.2em;
   display: inline-block;
 }
 
 .icon-list img {
   max-height: 4em;
   margin: 0.5em 0.5em;
-}
-
-#mongo-logo {
-  height: 8em;
-}
-#electron-logo {
-  max-width: 200px;
 }
 
 hr {
