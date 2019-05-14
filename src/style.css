@@ -13,20 +13,24 @@ body {
   left: 0;
 }
 
-#nav-bar a {
-  background-color: rgba(57, 88, 105,0.95);
+.nav-link {
+  background-color: rgba(57, 88, 105,0.75);
   padding: 0.6em;
   font-size: 1.2em;
   text-align: center;
   color: floralwhite;
   text-decoration: none;
   transition: 0.2s;
+  margin: 0px auto;
+  width: 100%;
+  position:relative;
 }
 
 #nav-bar a:hover {
   background-color: rgba(57, 88, 105,1);
   transition: 0.2s;
 }
+
 
 /************************ main ************************/
 
@@ -183,11 +187,18 @@ hr {
     margin-top: 1em;
   }
 
-  #nav-bar a {
+  #nav-bar:hover {
+    background-color: rgba(57, 88, 105,0.9);
+    transition: 0.2s;
+    height: 2.5em;
+    padding-top: 0.5em;
+  }
+
+  .nav-link {
     border-radius: 0.3em;
     padding: 0.5em 0.75em;
     font-size: 1.2em;
-    margin: 1em;
+    margin: 0.5em;
   }
 
   #about {
