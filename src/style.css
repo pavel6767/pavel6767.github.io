@@ -188,17 +188,17 @@ hr {
   }
 
   #nav-bar:hover {
-    background-color: rgba(57, 88, 105,0.9);
+    background-color: rgba(57, 88, 105,0.8);
     transition: 0.2s;
-    height: 2.5em;
+    height: 1.75em;
     padding-top: 0.5em;
   }
 
   .nav-link {
     border-radius: 0.3em;
-    padding: 0.5em 0.75em;
+    padding: 0.3em 0.75em;
     font-size: 1.2em;
-    margin: 0.5em;
+    margin: 0.5em 1em;
   }
 
   #about {
@@ -218,7 +218,9 @@ hr {
     width: 531px;
     height: 300px;
   }
-
+  .nav-link {
+    margin: 0.5em 2em;
+  }
 }
 
 /************************ V 1024 ************************/
@@ -227,6 +229,10 @@ hr {
   .img-container .snapshot {
     width: 708px;
     height: 400px;
+  }
+
+  .nav-link {
+    margin: 0.5em 3em;
   }
 
 }
