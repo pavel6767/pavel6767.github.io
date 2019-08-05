@@ -13,7 +13,7 @@ $("#nav-bar a").click(function() {
 const projectList = [
   {
     name: "JetSweat",
-    siteUrl: "https://jetsweatfitness.com/",
+    // siteUrl: "https://jetsweatfitness.com/",
     description:
       "Exclusive access to stream unlimited workout videos from leading boutique studios, wherever, whenever.",
     tools: ["React", "Redux", "CSS"],
@@ -41,9 +41,9 @@ const classNameConfig = {
 class Project {
   constructor(project) {
     this.name = project.name;
-    this.siteUrl = project.siteUrl || "";
-    this.videoUrl = project.videoUrl || "";
-    this.repoUrl = project.repoUrl || "[Private Repository]";
+    this.siteUrl = project.siteUrl;
+    this.videoUrl = project.videoUrl;
+    this.repoUrl = project.repoUrl;
     this.description = project.description;
     this.tools = project.tools;
   }
@@ -53,7 +53,7 @@ class Project {
 
     // title
     let title = document.createElement("h2");
-    if (this.siteUrl === "") {
+    if (!this.siteUrl) {
       title.textContent = this.name;
     } else {
       let titleLink = document.createElement("a");
@@ -69,14 +69,15 @@ class Project {
     textContainer.classList.add("text");
 
     // video url
-    if (this.siteUrl !== "") {
+    if (this.siteUrl) {
       let videoUrlContainer = document.createElement("div");
       let videoUrl = document.createElement("a");
       videoUrl.target = "blank";
       videoUrl.href = this.videoUrl;
+      videoUrl.textContent = "Demo Video";
 
-      textContainer.appendChild(videoUrlContainer);
       videoUrlContainer.appendChild(videoUrl);
+      textContainer.appendChild(videoUrlContainer);
     }
 
     // repo url
@@ -85,9 +86,10 @@ class Project {
       let repoUrl = document.createElement("a");
       repoUrl.target = "blank";
       repoUrl.href = this.repoUrl;
+      repoUrl.textContent = "GitHub";
       repoUrlContainer.appendChild(repoUrl);
     } else {
-      repoUrlContainer.textContent = "[Private Repository]";
+      repoUrlContainer.innerHTML = "[Private Repository]";
     }
     textContainer.appendChild(repoUrlContainer);
 
