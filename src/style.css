@@ -92,13 +92,14 @@ a,
 
 /************************ projects ************************/
 
-span {
-  padding: 4px 8px;
-  margin: 0 0.3em;
-  line-height: 25px;
+.icon-list > span {
+  padding: 3px 6px;
+  margin: 0.5em 0.2em;
+  line-height: 20px;
   border-radius: 5px;
   color: white;
   font-size: 0.85em;
+  display: inline-block;
 }
 
 p {
