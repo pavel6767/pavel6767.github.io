@@ -10,16 +10,15 @@ $("#nav-bar a").click(function() {
   );
 });
 
-
 // single project
-  // {
-  //   name:,
-  //   siteUrl: ,
-  //   videoUrl: ,
-  //   repoUrl: ,
-  //   description: ,
-  //   tools: []
-  // },
+// {
+//   name:,
+//   siteUrl: ,
+//   videoUrl: ,
+//   repoUrl: ,
+//   description: ,
+//   tools: []
+// },
 
 const projectList = [
   {
@@ -60,7 +59,7 @@ const projectList = [
     description:
       "Tetris clone using vanilla JS. Deployed on heroku and Electron as a desktop app.",
     tools: ["Javascript", "Electron", "Heroku"],
-  }
+  },
 ];
 
 const classNameConfig = {
@@ -173,6 +172,8 @@ class Project {
 
   result(target) {
     let container = document.createElement("div");
+
+    container.classList.add("project-instance");
 
     // title
     let title = this.getTitle();
