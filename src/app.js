@@ -4,22 +4,22 @@ $("#nav-bar a").click(function() {
 
   $("html, body").animate(
     {
-      scrollTop: $(id).offset().top - $("#nav-bar").height(),
+      scrollTop: 0,
+      // scrollTop: $(id).offset().top - $("#nav-bar").height(),
     },
     500
   );
 });
 
-
 // single project
-  // {
-  //   name:,
-  //   siteUrl: ,
-  //   videoUrl: ,
-  //   repoUrl: ,
-  //   description: ,
-  //   tools: []
-  // },
+// {
+//   name:,
+//   siteUrl: ,
+//   videoUrl: ,
+//   repoUrl: ,
+//   description: ,
+//   tools: []
+// },
 
 const projectList = [
   {
@@ -60,7 +60,7 @@ const projectList = [
     description:
       "Tetris clone using vanilla JS. Deployed on heroku and Electron as a desktop app.",
     tools: ["Javascript", "Electron", "Heroku"],
-  }
+  },
 ];
 
 const classNameConfig = {
@@ -151,7 +151,7 @@ class Project {
 
   getTextContainer() {
     let textContainer = document.createElement("div");
-    textContainer.classList.add("text");
+    textContainer.classList.add("project-text");
 
     // // video url
     if (this.videoUrl) {
@@ -174,6 +174,8 @@ class Project {
   result(target) {
     let container = document.createElement("div");
 
+    container.classList.add("project-instance");
+
     // title
     let title = this.getTitle();
     container.appendChild(title);
@@ -190,12 +192,9 @@ class Project {
   }
 }
 
-let projectsContainer = document.getElementById("projects");
+let projectsContainer = document.getElementById("projects-grid");
 
 projectList.forEach((project, inx, self) => {
   let instance = new Project(project);
   instance.result(projectsContainer);
-  if (inx < self.length - 1) {
-    projectsContainer.appendChild(document.createElement("hr"));
-  }
 });
