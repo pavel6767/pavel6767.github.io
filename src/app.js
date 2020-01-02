@@ -191,7 +191,7 @@ class Project {
   }
 }
 
-let projectsContainer = document.getElementById("projects");
+let projectsContainer = document.getElementById("projects-grid");
 
 projectList.forEach((project, inx, self) => {
   let instance = new Project(project);
