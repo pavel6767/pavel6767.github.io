@@ -150,7 +150,7 @@ class Project {
 
   getTextContainer() {
     let textContainer = document.createElement("div");
-    textContainer.classList.add("text");
+    textContainer.classList.add("project-text");
 
     // // video url
     if (this.videoUrl) {
@@ -196,7 +196,4 @@ let projectsContainer = document.getElementById("projects");
 projectList.forEach((project, inx, self) => {
   let instance = new Project(project);
   instance.result(projectsContainer);
-  if (inx < self.length - 1) {
-    projectsContainer.appendChild(document.createElement("hr"));
-  }
 });
