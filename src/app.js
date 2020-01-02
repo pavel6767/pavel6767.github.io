@@ -4,7 +4,8 @@ $("#nav-bar a").click(function() {
 
   $("html, body").animate(
     {
-      scrollTop: $(id).offset().top - $("#nav-bar").height(),
+      scrollTop: 0,
+      // scrollTop: $(id).offset().top - $("#nav-bar").height(),
     },
     500
   );
