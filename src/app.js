@@ -11,6 +11,18 @@ $("#nav-bar a").click(function() {
   );
 });
 
+const navBar = document.getElementById("nav-bar");
+
+window.addEventListener("scroll", function(evt) {
+  console.log("scrolling");
+  console.log(window.pageYOffset);
+  if (window.pageYOffset > 80) {
+    navBar.style.opacity = "1";
+  } else {
+    navBar.style.opacity = "0";
+  }
+});
+
 // single project
 // {
 //   name:,
