@@ -1,6 +1,7 @@
 /************************ shared styles ************************/
 body {
   background-color: #c4c4c4;
+  font-size: 22px;
 }
 
 /************************ main ************************/
@@ -9,7 +10,7 @@ body {
 /************************ main ************************/
 /************************ main ************************/
 #main {
-  margin-top: 100px;
+  margin-top: 150px;
   text-align: center;
 }
 
@@ -57,7 +58,7 @@ body {
 
 #nav-bar a {
   padding: 0.5em;
-  font-size: 1.5em;
+  font-size: 2em;
   text-decoration: none;
   border: 3px solid white;
   border-radius: 100%;
@@ -75,11 +76,27 @@ body {
 /************************ about ************************/
 /************************ about ************************/
 
+#about {
+  margin: 0 5%;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
 /************************ projects ************************/
 /************************ projects ************************/
 
 #projects {
   padding-bottom: 50px;
+}
+
+.black-font {
+  font-weight: bold;
 }
 
 #projects-grid {
@@ -103,7 +120,7 @@ body {
   line-height: 20px;
   border-radius: 5px;
   color: white;
-  font-size: 0.85em;
+  font-size: 1em;
   display: inline-block;
 }
 
@@ -153,7 +170,6 @@ body {
 }
 
 .icon-list img {
-  max-height: 4em;
   margin: 0.5em 0.5em;
 }
 
@@ -169,7 +185,7 @@ body {
 }
 
 .contact-icon-list img {
-  height: 2.5em;
+  height: 5em;
 }
 
 .contact-icon-list img:hover {
