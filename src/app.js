@@ -49,6 +49,14 @@ const projectList = [
     tools: ["WordPress", "Google Graphs", "PHP", "Javascript", "CSS"],
   },
   {
+    name: "Personal Site (this page)",
+    siteUrl: "https://pavel6767.github.io/",
+    repoUrl: "https://github.com/pavel6767/pavel6767.github.io",
+    description:
+      "Personal page that displays some of my work. The page you're seeing now. Click the link for a prime example of recursion without base case",
+    tools: ["HTML", "Javascript", "CSS"],
+  },
+  {
     name: "Fullstack Demo App",
     siteUrl: "https://nerds-demo.herokuapp.com/",
     repoUrl: "https://github.com/pavel6767/fullstack-demo-campus-students",
