@@ -14,8 +14,6 @@ $("#nav-bar a").click(function() {
 const navBar = document.getElementById("nav-bar");
 
 window.addEventListener("scroll", function(evt) {
-  console.log("scrolling");
-  console.log(window.pageYOffset);
   if (window.pageYOffset > 80) {
     navBar.style.opacity = "1";
   } else {
@@ -35,6 +33,13 @@ window.addEventListener("scroll", function(evt) {
 
 const projectList = [
   {
+    name: "Codewords",
+    siteUrl: "https://be-codewords.herokuapp.com/",
+    repoUrl: "https://github.com/hatchways/team-fettuccini",
+    description: "Fullstack Clone of popular board game Codenames",
+    tools: ["Node", "Express", "MongoDB", "React", "Heroku"],
+  },
+  {
     name: "JetSweat",
     siteUrl: "https://jetsweatfitness.com/",
     description:
@@ -43,7 +48,7 @@ const projectList = [
   },
   {
     name: "Energy Healing Online",
-    siteUrl: "http://www.energy-healing-online.com/",
+    // siteUrl: "http://www.energy-healing-online.com/",
     description:
       "Application that guides users through emotional and psychological healing.",
     tools: ["WordPress", "Google Graphs", "PHP", "Javascript", "CSS"],
@@ -55,14 +60,6 @@ const projectList = [
     description:
       "Personal page that displays some of my work. The page you're seeing now. Click the link for a prime example of recursion without base case",
     tools: ["HTML", "Javascript", "CSS"],
-  },
-  {
-    name: "Fullstack Demo App",
-    siteUrl: "https://nerds-demo.herokuapp.com/",
-    repoUrl: "https://github.com/pavel6767/fullstack-demo-campus-students",
-    description:
-      "A Fullstack demo application, can create students, that can belong to campuses.",
-    tools: ["Node", "Express", "Sequelize", "React", "Redux", "Heroku"],
   },
   {
     name: "Save for Later",
